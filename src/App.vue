@@ -1,10 +1,7 @@
 <template>
   <div id="app">
-    <section class="todoapp">
-        <Header />
-        <Main />
-        <Footer />
-    </section>
+      <Main />
+      <Footer />
     <Info />
   </div>
 </template>

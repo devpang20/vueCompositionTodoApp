@@ -3,7 +3,7 @@
     <div class="view">
       <input class="toggle" type="checkbox" :checked="todo.done"/>
       <label>{{ todo.text }}</label>
-      <button class="destroy" />
+      <button class="destroy" @click="$emit('remove', todo.id)" />
     </div>
     <input class="edit" value="Create a TodoMVC template" />
   </li>
