@@ -1,28 +1,30 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <TodoList />
+    <section class="todoapp">
+        <Header />
+        <Main />
+        <Footer />
+    </section>
+    <Info />
   </div>
 </template>
 
 <script>
-import TodoList from './components/TodoList';
+import Footer from './components/Footer.vue';
+import Header from './components/Header.vue';
+import Info from './components/Info.vue';
+import Main from './components/Main.vue';
 
 export default {
   name: 'App',
   components: {
-    TodoList
+    Header,
+    Main,
+    Footer,
+    Info,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>

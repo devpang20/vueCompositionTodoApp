@@ -8,13 +8,12 @@
 export default {
   props: {
     value: { type: String, default: ""},
-
   },
   computed: {
     listeners() {
       return {
         ...this.$listeners,
-        input: e => this.$emit("input", e.target.value),
+        input: (e) => this.$emit("input", e.target.value),
       }
     }
   }
